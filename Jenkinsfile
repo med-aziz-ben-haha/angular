@@ -20,21 +20,21 @@ pipeline {
         stage('Build') {
              steps{
                 script{
-                    sh "sudo ansible-playbook Ansible/build.yml -i Ansible/inventory/host.yml"
+                    sh "ansible-playbook Ansible/build.yml -i Ansible/inventory/host.yml"
                 }
             }
         }
         stage('Docker') {
              steps{
                 script{
-                    sh "sudo ansible-playbook Ansible/docker.yml -i Ansible/inventory/host.yml"
+                    sh "ansible-playbook Ansible/docker.yml -i Ansible/inventory/host.yml"
                 }
             }
         }
         stage('DockerHub push') {
              steps{
                 script{
-                    sh "sudo ansible-playbook Ansible/docker-registry.yml -i Ansible/inventory/host.yml"
+                    sh "ansible-playbook Ansible/docker-registry.yml -i Ansible/inventory/host.yml"
                 }
             }
         }
