@@ -4,6 +4,6 @@ localhost ansible_connection=local
 172.10.0.140
 
 [Server:vars]
-ansible_python_interpreter= /usr/bin/python
+ansible_python_interpreter= /usr/bin/python3
 ansible_user=vagrant
 ansible_sudo_pass=vagrant
