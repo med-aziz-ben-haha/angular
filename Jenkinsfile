@@ -4,9 +4,9 @@ pipeline {
         stage('Pull') {
              steps{
                 script{
-                    checkout([$class: 'GitSCM', branches: [[name: '*/master']],
+                    checkout([$class: 'GitSCM', branches: [[name: '*/main']],
                         userRemoteConfigs: [[
-                            url: 'https://github.com/aminegongi/cd_lab1']]])
+                            url: 'https://github.com/med-aziz-ben-haha/angular.git']]])
                 }
             }
         }
