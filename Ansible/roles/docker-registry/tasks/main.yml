@@ -7,8 +7,8 @@
     email: mohamedaziz.benhaha@esprit.tn
 - name: Push to docker hub
   docker_image:
-    name: azizbenhaha/angularLivraison
-    repository: azizbenhaha/angularLivraison
+    name: azizbenhaha/LivraisonContinue
+    repository: azizbenhaha/LivraisonContinue
     tag: latest
     source: local
     push: yes
