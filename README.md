@@ -25,3 +25,14 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+sudo apt install apt-transport-https curl gnupg-agent ca-certificates software-properties-common -y
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo apt install docker-ce docker-ce-cli containerd.io -y
+sudo usermod -aG docker $USER
+newgrp docker
+docker version
+sudo systemctl status docker
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo systemctl restart docker
