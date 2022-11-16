@@ -5,4 +5,5 @@ localhost
 
 [Server:vars]
 ansible_python_interpreter= /usr/bin/python
-ansible_user=azizbenhaha
+ansible_user=angular
+ansible_sudo_pass=1234
