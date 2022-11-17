@@ -4,7 +4,6 @@
   docker_login:
     username: azizbenhaha
     password: mydockerhub
-    email: mohamedaziz.benhaha@esprit.tn
 - name: Push to docker hub
   docker_image:
     name: azizbenhaha/livraison
